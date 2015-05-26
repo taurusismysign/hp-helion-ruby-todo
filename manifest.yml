@@ -1,0 +1,6 @@
+---
+applications:
+- name: hp-helion-ruby-todo
+  memory: 256M
+  instances: 1
+  command: bundle exec rake db:migrate && bundle exec rails s -p $PORT
